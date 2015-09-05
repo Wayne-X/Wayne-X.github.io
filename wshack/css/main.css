@@ -1,0 +1,54 @@
+.jumbotron {
+	margin: 0px;
+	border: 0px;
+}
+
+#jumbo1 {
+	background-image:url('../images/WS2.png');
+	height: 266px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+
+#jumbo2 {
+	background: white;
+}
+
+#jumbo3 {
+	background: #005A79;
+}
+
+#jumbo4 {
+	background: #DD6AB5;
+}
+
+#submit {
+	height: 10em;
+	width: 10em;
+}
+
+.table {
+	height: 12em;
+	width: 12em;
+}
+
+.tbody {
+	height: 12em;
+	width: 12em;
+}
+
+.td {
+    text-align: center;
+	width: 3em;
+	height: 3em;
+}
+
+.tr {
+	height: 3em;
+}
+
+.alpha {
+	width: 3em;
+	height: 3em;
+}
