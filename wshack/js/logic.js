@@ -50,9 +50,34 @@ function processAlphaClick(){
 // called from jquery.autotab.js when character is entered into alpha input
 function processKeyEntry(alphaInput){
   var input = alphaInput.value;
+  if (!isAlphaInput(input)){
+    alphaInput.value = '';
+    return
+  }
+
   if (input == 'Q'){
     alphaInput.value = 'Qu';
   }
+}
+
+function isAlphaInput(input){
+  input = input.toUpperCase();
+  for (var i = 0; i < input.length; i++){
+    if (!isAlphaCharacter(input[i])){
+      return false;
+    }
+  }
+  return true;
+}
+
+function isAlphaCharacter(char){
+  var alphas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  for (var i = 0; i < alphas.length; i++){
+    if (char == alphas[i]){
+      return true;
+    }
+  }
+  return false;
 }
 
 function textEnter(){
@@ -67,6 +92,7 @@ function main(){
   solve();
   sortSolutions();
   displaySolutions();
+  document.getElementById('solutions_div').scrollIntoView();
 }
 
 function getTextInput(){
@@ -156,6 +182,13 @@ function displaySolutions(){
   clearDOMChildren(DOM_solutionsDiv);
   var listNode;
   var textNode;
+
+  // create title 
+  var titleNode = document.createElement('h1');
+  titleNode.innerHTML = "All Words: ";
+  DOM_solutionsDiv.appendChild(titleNode);
+
+  // append legal words
   for (var i = 0; i < solutions.length; i++){
     listNode = document.createElement('LI');
     textNode = document.createTextNode(solutions[i]);
@@ -186,4 +219,15 @@ function sortSolutions(){
       return -1;
     }
   });
+}
+
+function resetBoard(){
+  document.getElementById('wordGrid').reset();
+
+  /*
+  for (var i = 1; i <= 16; i++){
+    var inputDOM = document.getElementById('letter' + String(i)).value.toLowerCase();
+    inputDOM = '';
+  }
+  */
 }
