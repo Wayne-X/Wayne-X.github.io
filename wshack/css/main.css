@@ -1,11 +1,52 @@
+body {
+	font-family: 'Ek Mukta', sans-serif;
+}
+
 .jumbotron {
 	margin: 0px;
 	border: 0px;
 }
 
+#jumbo2 > div > p {
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	display: block;
+	font-style: normal;
+	height: 182px;
+	letter-spacing: normal;
+	font-size: 25px;
+	line-height: 26px;
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+}
+
+#cracked {
+	color: red !important;
+	font-weight: bold !important;
+}
+
+#jumbo2 > div > h1 {
+	color: rgb(0, 0, 68);
+	cursor: auto;
+	display: block;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 300;
+	height: 32px;
+	letter-spacing: normal;
+	line-height: 32px;
+	margin: 20px;
+	padding-bottom: 80px;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+}
+
+
+
 #jumbo1 {
 	background-image:url('../images/WS2.png');
-	height: 266px;
+	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center; 
@@ -13,42 +54,72 @@
 
 #jumbo2 {
 	background: white;
+	margin: 5em;
 }
 
 #jumbo3 {
 	background: #005A79;
+	padding: 30px;
 }
 
 #jumbo4 {
+	padding: 50px;
 	background: #DD6AB5;
 }
 
-#submit {
-	height: 10em;
-	width: 10em;
+#submit, #resetBoard {
+	height: 200px;
+	width: 100px;
+	padding-top: 100px;
+	margin-bottom: 7em;
+	margin: 0 auto 0 auto;
+	vertical-align: middle;
+	margin-bottom: 7em;
 }
 
-.table {
-	height: 12em;
-	width: 12em;
+#clear-board {
+	text-align: right;
 }
 
-.tbody {
-	height: 12em;
-	width: 12em;
+#submit-board {
+	text-align: left;
 }
 
-.td {
-    text-align: center;
-	width: 3em;
-	height: 3em;
+#table {
+	border: none;
+	width: 400px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	margin-top: 7em;
+	padding: none;
 }
 
-.tr {
-	height: 3em;
+#table_div > #wordGrid > #table > tbody > tr > td {
+	border: none;
+	padding: none;
 }
 
-.alpha {
-	width: 3em;
-	height: 3em;
+#table_div > #wordGrid > #table > tbody > tr > td > input {
+	border-radius: 5px;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 4em;
+	box-shadow: 0px 0px 10px black;
+	padding: none;
+}
+
+#jumbo3 > div > div.col-md-4 {
+	text-align: center;
+}
+
+#table_div {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#solutions_div {
+	text-align: center;
+	font-size: 30px;
 }
