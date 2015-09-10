@@ -1,112 +1,99 @@
 <!DOCTYPE html>
 <head>
   <link href="css/bootstrap.min.css" rel="stylesheet"></link>
-  <link rel="icon" href="favicon.ico"/>
-  <link href='https://fonts.googleapis.com/css?family=Ek+Mukta:400,200' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel='stylesheet'></link>
+  <link rel="icon" href="favicon.ico"/>
 </head>
 <body>
   <div class="jumbotron" id="jumbo1">
-    <div class="container-fluid">
+    <div class="container">
     </div>
   </div> 
-  <div class="container-fluid" id="jumbo2">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <h1>WORD STREAK WITH FRIENDS</h1>
-      <h1 id="cracked">HACKED</h1>
-      <p id="description" class="text text-center">Ready to take your game to the next level? Use the Word Streak With Friends word generator and never lose another game!<br><br>To use the word generator, fill out the empty board with the letter you see on your game screen, and hit enter or click the submit button. Enjoy!</p>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
-  <div class="container-fluid" id="jumbo3">
-    <div class="row">
-      <div class="col-md-3" id="clear-board">
-        <input type="image" src="images/reset.png" id="resetBoard" value="resetBoard" onclick="resetBoard()"></input>
-        <h1>Clear board</h1>
-      </div>
-      <div class="col-md-6">
+  <div class="jumbotron" id="jumbo2">
+    <p id="description" class="text text-center">description</p>
+  </div> 
+  <div class="jumbotron" id="jumbo3">
+    <div class="container">
         <div id="table_div">
-          <form id="wordGrid">
-            <table id="table" class="table">
-              <tbody>
-                <tr>
-                  <td id="td9">
-                    <input type="text" id="letter1" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td10">
-                    <input type="text" id="letter2" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td11">
-                    <input type="text" id="letter3" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td12">
-                    <input type="text" id="letter4" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                </tr>
-                <tr>
-                  <td id="td13">
-                    <input type="text" id="letter5" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td14">
-                    <input type="text" id="letter6" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td15">
-                    <input type="text" id="letter7" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td16">
-                    <input type="text" id="letter8" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                </tr>
-                <tr>
-                  <td id="td1">
-                    <input type="text" id="letter9" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td2">
-                    <input type="text" id="letter10" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td3">
-                    <input type="text" id="letter11" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td4">
-                    <input type="text" id="letter12" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                </tr>
-                <tr>
-                  <td id="td5">
-                    <input type="text" id="letter13" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td6">
-                    <input type="text" id="letter14" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td7">
-                    <input type="text" id="letter15" class="alpha" maxlength="1" onfocus="processAlphaClick()">
-                  </td>
-                  <td id="td8">
-                    <input type="text" id="letter16" class="alpha" maxlength="1" onfocus="processAlphaClick()"onkeypress="textEnter(event)">
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </form>
+          <table id="table" class="table table-bordered table-responsive">
+            <tbody>
+              <tr>
+                <td>
+                  <input type="text" id="letter1" class="alpha" maxlength="1" onfocus="processAlphaClick()" autofocus>
+                </td>
+                <td>
+                  <input type="text" id="letter2" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter3" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter4" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="letter5" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter6" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter7" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter8" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="letter9" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter10" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter11" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter12" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="letter13" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter14" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter15" class="alpha" maxlength="1" onfocus="processAlphaClick()">
+                </td>
+                <td>
+                  <input type="text" id="letter16" class="alpha" maxlength="1" onfocus="processAlphaClick()"onkeypress="textEnter(event)">
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <div class="col-md-3" id="submit-board">
-        <input type="image" src="images/submit.png" id="submit" value="Submit" onclick="main()"></input>
-        <h1>Submit board</h1>
-      </div>
+    </div>
+    <div class="container">
+        <div id="submit_div">
+          <input type="image" src="images/submit.png" id="submit" value="Submit" onclick="main()">
+        </div>
     </div>
   </div> 
-
-  <div class="container-fluid" id="jumbo4">
-    <div id="solutions_div">
+  <div class="jumbotron" id="jumbo4">
+    <div class="container">
+      <div id="solutions_div">
+      </div>
     </div>
-  </div>
-
+  </div>  
 </body>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.autotab.js"></script>
+<!-- <script type="text/javascript" src='js/dictionary.js'></script> -->
 <script type="text/javascript" src="js/logic.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
