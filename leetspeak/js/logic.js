@@ -12,6 +12,12 @@ function mySubmit(){
 	return false;
 }
 
+function copyback(){
+	var text = document.getElementById("posttextarea").value;
+	document.getElementById("textarea").value = text;
+	return false;
+}
+
 function deSubmit(){
 	var text = document.getElementById("textarea").value;
 	text = del33t(text);
