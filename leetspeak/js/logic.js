@@ -13,13 +13,23 @@ function mySubmit(){
 }
 
 function l33tify(text){
-	text = text.replace("I", "1");
-	text = text.replace("E", "3");
-	text = text.replace("A", "4");
-	text = text.replace("O", "0");
-	text = text.replace("i", "1");
-	text = text.replace("e", "3");
-	text = text.replace("A", "4");
-	text = text.replace("O", "0");
+	text = replaceAll("i", "1", text);
+	text = replaceAll("I", "1", text);
+	text = replaceAll("e", "3", text);
+	text = replaceAll("E", "3", text);
+	text = replaceAll("a", "4", text);
+	text = replaceAll("A", "4", text);
+	text = replaceAll("o", "0", text);
+	text = replaceAll("O", "0", text);
 	return text;
 }
+
+function replaceAll(find, replace, str) {
+  return str.replace(new RegExp(find, 'g'), replace);
+}
+
+/*
+function escapeRegExp(string) {
+    return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
+*/
