@@ -12,6 +12,15 @@ function mySubmit(){
 	return false;
 }
 
+function deSubmit(){
+	var text = document.getElementById("textarea").value;
+	text = del33t(text);
+	document.getElementById("posttextarea").value = text;
+	document.getElementById("posttextarea").focus();
+	//document.getElementById("posttextarea").select();
+	return false;
+}
+
 function l33tify(text){
 	text = replaceAll("i", "1", text);
 	text = replaceAll("I", "1", text);
@@ -21,6 +30,14 @@ function l33tify(text){
 	text = replaceAll("A", "4", text);
 	text = replaceAll("o", "0", text);
 	text = replaceAll("O", "0", text);
+	return text;
+}
+
+function del33t(text){
+	text = replaceAll("1", "i", text);
+	text = replaceAll("3", "e", text);
+	text = replaceAll("4", "a", text);
+	text = replaceAll("0", "o", text);
 	return text;
 }
 
