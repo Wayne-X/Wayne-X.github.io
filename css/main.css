@@ -439,6 +439,14 @@ nav ul li a {
   margin-right: 5px;
 }
 
+.modal-content a img {
+  width: 100%;
+}
+
+#my-video {
+  width: 100%;
+}
+
 .overlay-container {
   position: relative;
   display: block;
@@ -504,3 +512,4 @@ nav ul li a {
 #introduction, #portfolio, #contact {
   padding-bottom: 40px;
 }
+

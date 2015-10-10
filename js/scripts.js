@@ -69,3 +69,14 @@ function throttle (callback, limit) {
         }
     }
 }
+
+// pauses video when exit modal
+function stopVideo(){
+    var vid = document.getElementById("my-video");
+    vid.pause();
+}
+
+//exit modal on esc key
+function closeOnEsc() {
+    alert("got this far");
+}
