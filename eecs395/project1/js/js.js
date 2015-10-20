@@ -21,6 +21,29 @@ var blue =        {r: 0, g:0, b: 255, a:255};
 var black =       {r: 0, g:0, b: 0, a:255};
 var clear =       {r: 0, g: 0, b: 0, a: 0};
 
+/*
+reload the page
+*/
+function reload(){
+  location.reload();
+}
+
+/*
+load test data functions
+*/
+function load1(){
+  var test1 = "P\n(150,300)\n(450,300)\n(570,525)\n(653,780)\n(495,845)\n(350,740)\n(100,345)";
+  document.getElementById("inputArea").value = test1;
+}
+function load2(){
+  var test2 = "U\nP1\n(150,300)\n(450,300)\n(570,525)\n(653,780)\n(495,845)\n(350,790)\n(100,345)\nP2\n(285,420)\n(500,225)\n(831,543)\n(625,695)\n(444,710)\n(285,555)";
+  document.getElementById("inputArea").value = test2;
+}
+function load3(){
+  var test3 = "S\n(150,455)\n(225,700)\n(300,393)\n(350,110)\n(432,234)\n(527,129)\n(680,799)\n(734,569)\n(844,459)\n(927,665)\n(999,459)";
+  document.getElementById("inputArea").value = test3;  
+}
+
 function draw(){
   if (pressed){location.reload();}      // reload if already drawn before
   pressed = true;
